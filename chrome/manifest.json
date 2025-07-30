@@ -1,0 +1,19 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+  "manifest_version": 3,
+  "name": "Στον ΑΔΑ",
+  "version": "1.0",
+  "description": "Δημιουργεί ένα κουμπί για να πηγαίνεις κατευθείαν στην απόφαση αν γνωρίζεις τον ΑΔΑ.",
+  "permissions": [],
+  "icons": {
+    "128": "icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.diavgeia.gov.gr/*"],
+      "js": ["content.js"]
+    }
+  ]
+  
+}

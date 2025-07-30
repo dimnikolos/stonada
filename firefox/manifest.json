@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Στον Αδά",
+  "version": "1.0",
+
+  "description": "Προσθέτει ένα κουμπί Κατευθειάν στον ΑΔΑ στη Διαύγεια",
+
+  "icons": {
+    "128": "icons/icon128.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.diavgeia.gov.gr/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
