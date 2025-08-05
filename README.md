@@ -9,6 +9,6 @@
 Πώς δουλεύει;
 Η σελίδα της κάθε απόφασης είναι https://diavgeia.gov.gr/decision/view/[ΑΔΑ] οπότε αν ξέρεις τον ΑΔΑ ξέρεις και την ιστοσελίδα της απόφασης. Tο κουμπί "Κατευθείαν στον ΑΔΑ" που εμφανίζεται αυτοματοποιεί αυτή τη διαδικασία.
 
-[Η επέκταση στο Chrome](https://chromewebstore.google.com/detail/στον-αδα/mkmfcnpebpiceapnneafmplnbhfcajhh)
-
+[Η επέκταση στον Chrome](https://chromewebstore.google.com/detail/στον-αδα/mkmfcnpebpiceapnneafmplnbhfcajhh)
+[Η επέκταση στον Firefox](https://addons.mozilla.org/en-US/firefox/addon/στον-αδά/)
 
