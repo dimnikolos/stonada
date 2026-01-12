@@ -17,7 +17,14 @@ function createButton() {
 
   newButton.addEventListener("click", () => {
     if (!validADA(document.getElementById("generalSearchText").value)) {
-      alert("Δεν είναι ΑΔΑ!");
+      const originalBorder = input.style.border;
+      input.style.border = "2px solid red";
+      input.style.transition = "border 0.3s";
+
+      // Επαναφορά μετά από 1.5 δευτερόλεπτο
+      setTimeout(() => {
+        input.style.border = originalBorder;
+      }, 1500);
     } else {
       window.location.href =
         "https://diavgeia.gov.gr/decision/view/" +
