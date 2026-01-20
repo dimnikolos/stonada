@@ -1,0 +1,13 @@
+# Αγνοούμε όλα τα συμπιεσμένα αρχεία για τα Stores
+*.zip
+*.crx
+*.xpi
+
+# Αγνοούμε αρχεία συστήματος (Mac/Windows junk)
+.DS_Store
+Thumbs.db
+
+# Αγνοούμε ρυθμίσεις του Editor (VS Code, JetBrains κτλ)
+.vscode/
+.idea/
+*.swp

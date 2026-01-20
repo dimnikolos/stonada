@@ -1,7 +1,7 @@
 /*DIAVGEIA-------------------------------------------------*/
 
 function validADA(s) {
-  return /^[Α-Ωα-ω0-9\-]+$/.test(s);
+  return /^[Α-Ωα-ω0-9]+\-[Α-Ωα-ω0-9]+$/.test(s);
 }
 
 function createButton() {
@@ -16,12 +16,13 @@ function createButton() {
   newButton.style.marginLeft = "5px";
 
   newButton.addEventListener("click", () => {
-    if (!validADA(document.getElementById("generalSearchText").value)) {
-      alert("Δεν είναι ΑΔΑ!");
-    } else {
+    var search_term = document.getElementById("generalSearchText").value;
+    if (validADA(search_term)) {
       window.location.href =
-        "https://diavgeia.gov.gr/decision/view/" +
-        document.getElementById("generalSearchText").value.toUpperCase();
+        "https://diavgeia.gov.gr/decision/view/" + search_term.toUpperCase();
+    } else {
+      window.location.href = window.location.href =
+        'https://diavgeia.gov.gr/search?query=q:"' + search_term + '"&page=0';
     }
   });
 
