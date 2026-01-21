@@ -1,0 +1,5 @@
+/chrome
+/firefox
+*.zip
+*.crx
+*.xpi
